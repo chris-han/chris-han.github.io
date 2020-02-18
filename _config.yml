@@ -20,11 +20,11 @@ description: by Chris Han
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Author's home: "http://deanattali.com"
+  #About Me: "aboutme"
+  #Resources:
+  #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  #  - Learn markdown: "http://www.markdowntutorial.com/"
+  #Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -38,10 +38,10 @@ avatar: "/img/chris-shuimo.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
+navbar-col: "#919877"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
+page-col: "#f8f8f8"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
