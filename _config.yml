@@ -19,7 +19,7 @@ description: by Chris Han
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-navbar-links:
+#navbar-links:
   #About Me: "aboutme"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
