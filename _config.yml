@@ -38,7 +38,7 @@ avatar: "/img/chris-shuimo.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#919877"
+navbar-col: "#e7e7e7"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: #f8f8f8"
