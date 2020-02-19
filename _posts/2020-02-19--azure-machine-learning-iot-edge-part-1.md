@@ -1,12 +1,13 @@
 ---
 layout: post
 published: true
-title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测 Part 1
+title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测
 tags:
   - azure
   - iot
   - ML
 comments: true
+subtitle: Part 1
 ---
 抗击NCP新冠病毒这个事儿再往后面临的大问题就是实体经济的恢复生产问题。大量人员复工给企业带来的首要问题就是workplace safety。非接触式红外体温检测不仅应该用于机场码头，对企事业单位的入口也是必备手段。这个当然不仅是技术问题，还有整套管理流程问题。这个系列我先把技术探索分享一下，后面再把实践中的lesson learned分享给大家。
 
