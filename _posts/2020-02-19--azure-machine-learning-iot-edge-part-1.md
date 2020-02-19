@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测 Part 1
 tags:
   - azure
