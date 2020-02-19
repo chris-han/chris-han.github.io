@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: digitalnervous.com
+title: ninjacat.cn
 
 # Short description of your site
 description: by Chris Han
@@ -94,7 +94,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "digitalnervous.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "ninjacat.cn"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
