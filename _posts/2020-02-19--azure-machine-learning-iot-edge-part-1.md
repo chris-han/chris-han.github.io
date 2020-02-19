@@ -2,6 +2,11 @@
 layout: post
 published: false
 title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测 Part 1
+tags:
+  - azure
+  - iot
+  - ML
+comments: true
 ---
 ## 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测 Part 1
 
@@ -22,5 +27,3 @@ title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测 Pa
 Azure Machine Learning 本身提供了大量内置算法，Azure ML Studio可以通过拖拽的方式建模训练、发布或下载训练好的模型。最新的[AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml)功能甚至把你自己调参的工作都省了，指定数据源，它直接自动整理、清洗数据、选择算法、调参、性能比较之后呈现给你所有可能的模型供你下载。堪称傻瓜机里的战斗机。
 
 再好的算法也有场景局限。所以最好的办法是把数据公开给大家，一起改进算法。启动数据集在Google Dataset Search上发现一个，**[The daily, weekly, and seasonal cycles of body temperature analyzed at large scale ](https://tandf.figshare.com/articles/The_daily_weekly_and_seasonal_cycles_of_body_temperature_analyzed_at_large_scale/9872681/1)**
-
-
