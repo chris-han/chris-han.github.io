@@ -5,9 +5,9 @@ title: 微软Azure Machine Learning 与IoT Edge实现智能红外体温检测
 tags:
   - azure
   - iot
-  - Machine Learning
-  - Power Platform
-  - Flow
+  - machine learning
+  - power platform
+  - flow
 comments: true
 subtitle: Part 1
 ---
