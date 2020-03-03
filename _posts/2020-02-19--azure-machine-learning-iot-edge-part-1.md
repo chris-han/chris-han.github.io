@@ -18,7 +18,8 @@ subtitle: Part 1
 
 方案2就是加入了Azure Machine Learning Service。 Vs Code 开发、Azure Container Registry 发布训练好的模型 inference service image到边缘。每次报警提示现场人员二次检验并通过Azure 上的一个网页界面进行回报。这个数据会存在blob storage作为监督学习的正例，同时存于azure cosmo db是为了支持多人、近实时的报表。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。
 
-![架构图2]({{site.baseurl}}/img/figure2.png)
+![架构图2]({{site.baseurl}}/img/Workplace Safety Architecture.png)
+
 
 
 这个方案里面还可以集成Microsoft Dynamics Field Service——一个自动客服流程管理的SaaS服务。从边缘设备报警可以直接生成一个alert，alert可以自动或手动转换为case，case经过review可以再转换为工单、下发最近的医疗单位进行现场处置。做到事事有落实，事后有追踪。Dynamics Field Service已经内置集成了Azure IoT服务，所以基本上没有二次开发，全是配置实现。
