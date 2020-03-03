@@ -16,7 +16,7 @@ subtitle: Part 1
 ![架构图1]({{site.baseurl}}/img/figure1.png)
 
 
-方案2就是加入了Azure Machine Learning Service。 Vs Code 开发、Azure Container Registry 发布训练好的模型 inference service image到边缘。每次报警提示现场人员二次检验并通过Azure 上的一个网页界面进行回报。这个数据会存在blob storage作为监督学习的正例，同时存于azure cosmo db是为了支持多人、近实时的报表。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。
+方案2是一个闭合运营系统。首先通过Microsoft Power Platform为提供现场工作人员提供运动推送，提示体温异常人员通过检测门。Push notification是通过Microsoft Flow实现。推送的Notification又可以打开移动设备上的Power App，现场人员用手持测温设备进行二次测温后可以输入到Cosmo DB里作为确认。这些数据一方面作为管理人员的追溯留档，也可以作为样本，通过Azure Machine Learning 来改进报警模型。整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。
 
 ![架构图2]({{site.baseurl}}/img/Workplace Safety Architecture.png)
 
