@@ -29,3 +29,5 @@ subtitle: Part 1
 整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。Azure Machine Learning 本身提供了大量内置算法，Azure ML Studio可以通过拖拽的方式建模训练、发布或下载训练好的模型。最新的[AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml)功能甚至把你自己调参的工作都省了，指定数据源，它直接自动整理、清洗数据、选择算法、调参、性能比较之后呈现给你所有可能的模型供你下载。堪称傻瓜机里的战斗机。
 
 再好的算法也有场景局限。所以最好的办法是把数据公开给大家，一起改进算法。
+
+关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。也是我今后想测试的。 
