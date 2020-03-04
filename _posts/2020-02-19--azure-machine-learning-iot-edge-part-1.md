@@ -11,7 +11,8 @@ tags:
 comments: true
 subtitle: Part 1
 ---
-抗击NCP新冠病毒这个事儿再往后面临就是实体经济的恢复生产、学校开学的常态化安全检查问题。非接触式红外体温检测不仅应该用于机场码头，对企事业单位的入口也是必备手段。这个当然不仅是技术问题，还有整套管理流程问题。这个系列我先把技术探索分享一下，以后再把实践中的lesson learned分享给大家。
+抗击NCP新冠病毒这个事儿再往后面临就是实体经济的恢复生产、学校开学的常态化安全检查问题。非接触式红外体温检测不仅应该用于机场码头，对企事业单位的入口也是必备手段。这个当然不仅是技术问题，还有整套管理流程问题。Azure云平台上的服务太多了，跟IoT相关的[参考这里](https://azurecharts.com/stories/?s=7,52)。中国Mooncake和其他国家的略有不同，在选型的时候就有很多要注意的。这个系列我先把技术探索分享一下，以后再把实践中的lesson learned分享给大家。
+
 
 简化版的方案1(图1)，利用容器技术在边缘设备上直接部署azure function，通过对体温监测阈值的简单规则设置，触发报警和上传云端报告。[通过Azure function 连接Power BI的流式数据集](https://docs.microsoft.com/en-us/samples/azure-samples/functions-js-iot-hub-processing/processing-data-from-iot-hub-with-azure-functions/)可以做到近实时地展示警报。汇总数据，包括图片都存储在Azure Blob Storeage里留档备查。非实时报表可以通过Power BI的blob storage connector 直接读取azure blob storage里的累积数据。现场人员通知可以通过Azure Logic App推送到手机上的Microsoft Teams。这是最少代码、快速低成本搭建的方案。可以作为非常时期的快速部署的辅助报警手段。但响应速度和准确性肯定不行。设备误报率会比较高。原因很多。比如人体在一天中的不同时期体温不同，男女体温不同，女性生理期体温不同，环境影响也没考虑进来等（参考**[The daily, weekly, and seasonal cycles of body temperature analyzed at large scale ](https://tandf.figshare.com/articles/The_daily_weekly_and_seasonal_cycles_of_body_temperature_analyzed_at_large_scale/9872681/1)**）。所以有了通过机器学习的方式在线学习与改进边缘智能的方案2.
 
@@ -30,4 +31,4 @@ subtitle: Part 1
 
 再好的算法也有场景局限。所以最好的办法是把数据公开给大家，一起改进算法。
 
-关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。也是我今后想测试的。 
+关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。也是我今后想测试的。
