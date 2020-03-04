@@ -36,3 +36,5 @@ subtitle: Part 1
 ![市售红外镜头]({{site.baseurl}}/img/ir cams.png)
 
 Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. Azure IoT Edge的架构是可以实现不同模型的串联或并联处理。所以跑多少模型完全由硬件能力决定。以后有时间再聊一下硬件加速edge inference。另外这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。福兮祸兮！制造业受疫情影响，也许正是加速技术升级的机会。微软在[开源工业互联网](https://github.com/Azure/Industrial-IoT)的这部分我也另篇分享吧。
+
+还有一个UX小事（One more thing），现场人员通过移动端的Power App录入二次测温这个动作看似简单，但也费了我些心思。因为戴口罩、手套的话我自己实测录入挺难的。考虑到人体体温的范围其实有限，两个可能的方案：App上定制键盘或用微软认知服务的定制语音到文字的识别[Custom Speech](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/how-to-custom-speech)。有空再说。
