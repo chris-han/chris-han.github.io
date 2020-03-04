@@ -32,4 +32,4 @@ subtitle: Part 1
 
 再好的算法也有场景局限。所以最好的办法是把数据公开给大家，一起改进算法。
 
-关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是[工业互联](https://github.com/Azure/Industrial-IoT)网的架构。装上OPC UA模块就可以和其他工业设备互通互联。福兮祸兮，制造业受疫情影响，也许正是改造升级的机会。这部分我也另篇分享的。
+关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是[工业互联](https://github.com/Azure/Industrial-IoT)网的架构。装上OPC UA模块就可以和其他工业设备互通互联。福兮祸兮，制造业受疫情影响，也许正是加速改造升级的机会。这部分我也另篇分享的。
