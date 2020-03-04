@@ -20,7 +20,7 @@ subtitle: Part 1
 
 方案2是一个闭合运营系统。首先通过Microsoft Power Platform提供现场工作人员移动警报推送，提示体温异常人员通过检测点。Push notification是通过Microsoft Flow实现。推送的Notification又可以打开移动设备上的Power App。现场人员用手持测温设备进行二次测温后可以输入到Cosmo DB里作为追溯留档。同时也可以作为样本，通过Azure Machine Learning 来改进报警模型。整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。
 
-![架构图2]({{site.baseurl}}/img/Workplace Safety Architecture.png)
+![架构图2]({{site.baseurl}}/img/figure2.png)
 
 
 这个方案里面还可以集成Microsoft Dynamics Field Service——一个自动客服流程管理的SaaS服务。从边缘设备报警可以直接生成一个alert，alert可以自动或手动转换为case，case经过review可以再转换为工单、下发最近的医疗单位进行现场处置。做到事事有落实，事后有追踪。Dynamics Field Service已经内置集成了Azure IoT服务，所以基本上没有二次开发，全是配置实现。
