@@ -20,7 +20,7 @@ subtitle: Part 1
 
 方案2是一个闭合运营系统。首先通过Microsoft Power Platform提供现场工作人员移动警报推送，提示体温异常人员通过检测点。Push notification是通过Microsoft Flow实现。推送的Notification又可以打开移动设备上的Power App。现场人员用手持测温设备进行二次测温后可以输入到Cosmo DB里作为追溯留档。同时也可以作为样本，通过Azure Machine Learning 来改进报警模型。这个方案里面还可以集成云主播控制台来实时汇总分布各地的实时视频画面。必要的话，甚至可以通过移动skye客户端实现广播级的多路现场-导播台视频连麦，对现场工作进行指导或作为即时新闻采访通道。所有服务资源都在云端动态扩展，实现了平时与战时/处突的经济性vs性能的平衡。
 
-![架构图2]({{site.baseurl}}/img/figure2.png)
+![架构图2]({{site.baseurl}}/img/figure2-full-architecture.png)
 
 
 整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。Azure Machine Learning 本身提供了大量内置算法，Azure ML Studio可以通过拖拽的方式建模训练、发布或下载训练好的模型。最新的[AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml)功能甚至把你自己调参的工作都省了，指定数据源，它直接自动整理、清洗数据、选择算法、调参、性能比较之后呈现给你所有可能的模型供你下载。堪称傻瓜机里的战斗机。
