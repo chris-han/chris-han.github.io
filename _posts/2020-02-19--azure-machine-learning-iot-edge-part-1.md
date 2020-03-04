@@ -18,7 +18,7 @@ subtitle: Part 1
 ![架构图1]({{site.baseurl}}/img/figure1.png)
 
 
-方案2是一个闭合运营系统。首先通过Microsoft Power Platform提供现场工作人员移动警报推送，提示体温异常人员通过检测点。Push notification是通过Microsoft Flow实现。推送的Notification又可以打开移动设备上的Power App。现场人员用手持测温设备进行二次测温后可以输入到Cosmo DB里作为追溯留档。同时也可以作为样本，通过Azure Machine Learning 来改进报警模型。这个方案里面还可以集成云主播控制台来实时汇总分布各地的实时视频画面。必要的话，甚至可以通过移动skye客户端实现广播级的多路现场-导播台视频连麦，对现场工作进行指导或作为即时新闻采访通道。
+方案2是一个闭合运营系统。首先通过Microsoft Power Platform提供现场工作人员移动警报推送，提示体温异常人员通过检测点。Push notification是通过Microsoft Flow实现。推送的Notification又可以打开移动设备上的Power App。现场人员用手持测温设备进行二次测温后可以输入到Cosmo DB里作为追溯留档。同时也可以作为样本，通过Azure Machine Learning 来改进报警模型。这个方案里面还可以集成云主播控制台来实时汇总分布各地的实时视频画面。必要的话，甚至可以通过移动skye客户端实现广播级的多路现场-导播台视频连麦，对现场工作进行指导或作为即时新闻采访通道。所有服务资源都在云端动态扩展，实现了平时与战时/处突的经济性vs性能的平衡。
 
 ![架构图2]({{site.baseurl}}/img/figure2.png)
 
