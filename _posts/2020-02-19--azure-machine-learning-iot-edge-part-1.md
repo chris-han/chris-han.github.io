@@ -35,4 +35,4 @@ subtitle: Part 1
 关于硬件，理论上任何测体温的红外摄像头只要有SDK都可以集成。我实验用的双光镜头,测温30~45度。图5是我对市售镜头的统计，售价都是6万以上。我的目标是可以用更便宜的硬件配合算法的提升来让更多的单位用起来。
 ![市售红外镜头]({{site.baseurl}}/img/ir cams.png)
 
-Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. 这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。福兮祸兮！制造业受疫情影响，也许正是加速技术升级的机会。微软在[开源工业互联网](https://github.com/Azure/Industrial-IoT)的这部分我也另篇分享吧。
+Edge PC用的Intel NUC 7i5DNH6EL 跑Windows 10 IoT Enterprise LTSC. Azure IoT Edge的架构是可以实现不同模型的串联或并联处理。所以跑多少模型完全由硬件能力决定。以后有时间再聊一下硬件加速edge inference。另外这个方案基本上是工业互联网的架构。装上OPC UA模块就可以和其他工业设备互通互联。福兮祸兮！制造业受疫情影响，也许正是加速技术升级的机会。微软在[开源工业互联网](https://github.com/Azure/Industrial-IoT)的这部分我也另篇分享吧。
