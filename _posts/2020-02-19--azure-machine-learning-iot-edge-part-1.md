@@ -28,7 +28,7 @@ subtitle: Part 1
 
 现场人员使用医用手持测温设备进行二次测温后可以输入到Cosmo DB里作为追溯留档、交互式分析，同时也可以作为样本，通过Azure Machine Learning 来改进报警模型。这个方案里面还可以集成[微软技术中心MTC](https://www.microsoft.com/en-us/mtc)开发的云导播控制台来汇总分布各地的实时视频画面。必要的话，甚至可以通过移动skye客户端、无人机等实现广播级的多路现场-导播台视频连麦，对现场工作进行指导或作为即时新闻采访通道。这个方案可以实现单机32路视频会议直播，并可以通过Azure VM ScaleSet线性扩展，以后有时间我再另文展开。所有服务资源都在云端，根据工作量弹性缩放，实现了平时与战时/处突的经济性vs性能的平衡。
 
-整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。Azure Machine Learning 本身提供了大量内置算法，Azure ML Studio可以通过拖拽的方式建模训练、发布或下载训练好的模型。最新的[AutoML](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml)功能甚至把你自己调参的工作都省了，指定数据源，它直接自动整理、清洗数据、选择算法、调参、性能比较之后呈现给你所有可能的模型供你下载。堪称傻瓜机里的战斗机。
+整个机器学习模型的DevOps可以是Vs Code 开发、Azure Repo/Github 做代码管理、Azure Container Registry 发布训练好的模型 inference service image到边缘。Azure Cosmo db同时也可以支持分布式多点、近实时的报表查询。便于汇总多路边缘设备数据进行园区、甚至更大区域的动态趋势监测、预警。Azure Machine Learning 本身提供了大量内置算法，Azure ML Studio可以通过拖拽的方式建模训练、发布或下载训练好的模型。最新的[AutoML](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.jianshu.com%2Fp%2Fc96326fdfdf3%3Futm_campaign%3Dharuki%26utm_content%3Dnote%26utm_medium%3Dreader_share%26utm_source%3Dweixin_timeline%26from%3Dtimeline%26isappinstalled%3D0&data=02%7C01%7CChris.Han%40microsoft.com%7C4efe6b6d794340629b3b08d7c0c97673%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637189843818883695&sdata=vfoTK%2F%2B5YdKRUutvjbgtd490gMkP9lMsUcg5Ai7JB%2Bw%3D&reserved=0)功能甚至把你自己调参的工作都省了，指定数据源，它直接自动整理、清洗数据、选择算法、调参、性能比较之后呈现给你所有可能的模型供你下载。堪称傻瓜机里的战斗机。
 
 再好的算法也有场景局限。所以最好的办法是把数据公开给大家，一起改进算法。
 
