@@ -211,6 +211,7 @@ prose:
     - /css
     - /img
     - /js
+    - /.well-known
   metadata:
     _posts:
       - name: "layout"
