@@ -15,4 +15,5 @@ Join on your computer or mobile app
 
 
 ![qr code to join]({{site.baseurl}}/img/Stevens%20Virtual%20Alumni%20Day%20China.png)
-Scan the QR code to lanch the app on your mobile device
+
+### Scan the QR code to lanch the app on your mobile device
