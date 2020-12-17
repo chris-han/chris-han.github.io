@@ -7,7 +7,8 @@ date: '2020-12-20'
 ---
 ## [Steven Institute of Technology Virtual Alumni Day (China), Dec 20, 2020](https://teams.microsoft.com/meetingOptions/?organizerId=be95da01-9f77-40e0-9457-780e97244b3a&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47&threadId=19_meeting_NTZmZWRmMmEtOWRjNi00YTU3LWE3N2ItMWM0OGZlMGRhNTkx@thread.v2&messageId=0&language=en-US)
 9AM CST (Beijing Time)
-![IMG_2749.JPG]({{site.baseurl}}/img/IMG_2749.JPG)
+![IMG_2750.PNG]({{site.baseurl}}/img/IMG_2750.PNG)
+
 
 Join on your computer or mobile app
 
